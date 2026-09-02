@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +18,56 @@
     </header>
 
     <main>
-        <h2>Bienvenido a TecMap</h2>
 
-        <p>
-            Consulta el mapa del tecnológico y encuentra rápidamente
-            salones, laboratorios, oficinas y otros espacios.
+        <h2>Mapa del Tecnológico</h2>
+
+        <p class="descripcion">
+            Selecciona un espacio del mapa para consultar su ubicación.
         </p>
 
-        <button>Ver mapa</button>
+        <section class="mapa">
+
+            <div class="lugar edificio-a">
+                🏢<br>
+                Edificio A
+            </div>
+
+            <div class="lugar laboratorio">
+                🧪<br>
+                Laboratorio
+            </div>
+
+            <div class="lugar biblioteca">
+                📚<br>
+                Biblioteca
+            </div>
+
+            <div class="lugar banos">
+                🚻<br>
+                Baños
+            </div>
+
+            <div class="lugar edificio-b">
+                🏢<br>
+                Edificio B
+            </div>
+
+            <div class="entrada">
+                🚪 Entrada
+            </div>
+
+        </section>
+
+        <div id="informacion" class="informacion">
+
+            <h3>Selecciona un lugar</h3>
+
+            <p>
+                Haz clic en un espacio del mapa para ver información.
+            </p>
+
+        </div>
+
     </main>
 
     <footer>
@@ -34,4 +77,5 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
+
 </html>

@@ -12,67 +12,150 @@
 
 <body>
 
+    <!-- ENCABEZADO -->
+
     <header>
+
         <h1>TecMap</h1>
-        <p>Mapa y localización de espacios del Tecnológico</p>
+
+        <p>
+            Mapa y localización de espacios del Tecnológico
+        </p>
+
     </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
 
     <main>
 
         <h2>Mapa del Tecnológico</h2>
 
         <p class="descripcion">
-            Selecciona un espacio del mapa para consultar su ubicación.
+            Busca un lugar o selecciona un espacio del mapa para consultar su ubicación.
         </p>
+
+
+        <!-- BUSCADOR -->
+
+        <div class="busqueda">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Escribe el nombre de un lugar..."
+            >
+
+            <button id="botonBuscar">
+                🔎 Buscar
+            </button>
+
+            <button id="botonLimpiar">
+                ✖ Limpiar
+            </button>
+
+        </div>
+
+
+        <!-- MAPA -->
 
         <section class="mapa">
 
+            <!-- EDIFICIO A -->
+
             <div class="lugar edificio-a">
+
                 🏢<br>
+
                 Edificio A
+
             </div>
+
+
+            <!-- LABORATORIO -->
 
             <div class="lugar laboratorio">
+
                 🧪<br>
+
                 Laboratorio
+
             </div>
+
+
+            <!-- BIBLIOTECA -->
 
             <div class="lugar biblioteca">
+
                 📚<br>
+
                 Biblioteca
+
             </div>
+
+
+            <!-- BAÑOS -->
 
             <div class="lugar banos">
+
                 🚻<br>
+
                 Baños
+
             </div>
+
+
+            <!-- EDIFICIO B -->
 
             <div class="lugar edificio-b">
+
                 🏢<br>
+
                 Edificio B
+
             </div>
 
+
+            <!-- ENTRADA -->
+
             <div class="entrada">
+
                 🚪 Entrada
+
             </div>
 
         </section>
 
+
+        <!-- INFORMACIÓN DEL LUGAR -->
+
         <div id="informacion" class="informacion">
 
-            <h3>Selecciona un lugar</h3>
+            <h3>
+                Selecciona un lugar
+            </h3>
 
             <p>
-                Haz clic en un espacio del mapa para ver información.
+                Haz clic en un espacio del mapa o utiliza el buscador.
             </p>
 
         </div>
 
     </main>
 
+
+    <!-- PIE DE PÁGINA -->
+
     <footer>
-        <p>TecMap - Proyecto de Ingeniería de Software</p>
+
+        <p>
+            TecMap - Proyecto de Ingeniería de Software
+        </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
